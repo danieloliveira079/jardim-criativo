@@ -7,8 +7,8 @@
 // Description: A default stylesheet for OnEvent - Special Event Landing Page Template Designed & Developed By Saptarang.
 
 $(document).ready(function() {
-	
-	
+
+
 	setTimeout (function() {$('#options').animate({left:'-180px'});}, 400);
 	// switch
 	$('span.dialog').click(function() {
@@ -21,7 +21,7 @@ $(document).ready(function() {
 				$(this).find('h4').html('&laquo;').parent().css({'background':'#000'});
 		}
 	 });
-	 
+
 	$('#options .readyColors a').each(function(index) {
 			var ownColor = $(this).text();
 			$(this).css({'background-color':'#'+ownColor+''});
@@ -30,15 +30,15 @@ $(document).ready(function() {
 			var ownBgColor = $(this).text();
 			$(this).css({'background-color':'#'+ownBgColor+''});
 	});
-	
+
 	$('body').append('<input type="text" style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteColorBox">');
 	$('body').append('<input type="text" style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteTexBox"><i id="hiddenhead" style="visibility:hidden; font-size:1px; position:absolute; left:-500px;"></i>');
-	
+
 	$('body').append('<input type="text" style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteBgColorBox">');
 	$('body').append('<input type="text" style="visibility:hidden; position:fixed; top:20px; right:20px;" id="siteBgTexBox">');
-	
-	function DynamicCss() {
-			
+
+	/*function DynamicCss() {
+
 			var mainColor = $('#siteColorBox').val();
 			var mainBgColor = $('#siteBgColorBox').val();
 			$('#hiddenhead').attr('style', 'color:#'+mainColor+'; position:absolute; left:-550px; visibility:hidden;');
@@ -47,102 +47,102 @@ $(document).ready(function() {
 			var match = matchingColors.exec(gethexcolor);
 			var transCustomColor = "rgba("+match[1] + ', ' + match[2] + ', ' + match[3]+", 0.9)";
 			$('figcaption').css("background-color", transCustomColor);
-						
+
 			$('head style').append('h1,h2,h3,h4,h5,h6, .navigation ul li a, blockquote,.btnMain,.btnColor2,.btnColor3,.btnLte {font-family:"'+Heading_Font+'"; } html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {font-family:"'+Site_Font+'"; }  body {background-color:#'+mainBgColor+';} .navbar-header, .btn, .schedule-box h6.section-head span, header.colored, .panel-heading a, .navigation nav ul li, .styled div strong, .priceBox:hover .heading, .priceBox.featured .heading, a.top {background-color:#'+mainColor+'; }  a, #home li a:hover, h3 span, .speaker .col-md-2 i, #directionsPanel .adp-summary, #schedule .nav-tabs li.active h5, #main h2, .price strong  {color:#'+mainColor+'} #schedule .nav-tabs li.active i, #schedule .nav-tabs li a:hover h5, #schedule .nav-tabs li:hover i, .schedule-box li h6 strong {color:#'+mainColor+';}    div.section, #home {border-top:5px solid #'+mainColor+';  } .styled div {border-color:#'+mainColor+';  } #texture {background:url(../img/'+body_texture+') repeat 0 0;} ::selection {background-color:#'+mainColor+'; color:#fff;} ::-moz-selection {background-color:#'+mainColor+'; color:#fff;} ');
-			 
+
 		}
-	 
-	$('.readyColors a').click( function(event) { 
-			var getColor = $(this).text(); 
-			$('#siteColorBox').val(getColor);  
-			DynamicCss();  
-			event.preventDefault();  
+
+	$('.readyColors a').click( function(event) {
+			var getColor = $(this).text();
+			$('#siteColorBox').val(getColor);
+			DynamicCss();
+			event.preventDefault();
 	});
-	
-	$('.backColors a').click( function(event) { 
-			var getBgColor = $(this).text(); 
-			$('#siteBgColorBox').val(getBgColor);  
-			DynamicCss();  
-			event.preventDefault();  
+
+	$('.backColors a').click( function(event) {
+			var getBgColor = $(this).text();
+			$('#siteBgColorBox').val(getBgColor);
+			DynamicCss();
+			event.preventDefault();
 	});
-	
-	$('#customcolorsform').submit( function() { 
-			var getCustColor = $('#customColor').val(); 
-			$('#siteColorBox').val(getCustColor);  
-			DynamicCss();  
+
+	$('#customcolorsform').submit( function() {
+			var getCustColor = $('#customColor').val();
+			$('#siteColorBox').val(getCustColor);
+			DynamicCss();
 			return false;
 	});
-	
-	$('#custombackform').submit( function() { 
-			var getCustColor = $('#customBackColor').val(); 
-			$('#siteBgColorBox').val(getCustColor);  
-			DynamicCss();  
+
+	$('#custombackform').submit( function() {
+			var getCustColor = $('#customBackColor').val();
+			$('#siteBgColorBox').val(getCustColor);
+			DynamicCss();
 			return false;
 	});
-	
-	
-	
-	
+
+*/
+
+
 // Global Color
 	$('head style').append('h1,h2,h3,h4,h5,h6, .navigation ul li a, blockquote,.btnMain,.btnColor2,.btnColor3,.btnLte {font-family:"'+Heading_Font+'"; } html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fieldset, cite, input, select, textarea, button, a, section, article, aside, header, footer, nav {font-family:"'+Site_Font+'"; }  body {background-color:#'+page_background_color+';} .navbar-header, .btn, .schedule-box h6.section-head span, header.colored, .panel-heading a, .navigation nav ul li, .styled div strong, .priceBox:hover .heading, .priceBox.featured .heading, a.top {background-color:#'+main_color+'; }  a, #home li a:hover, h3 span, .speaker .col-md-2 i, #directionsPanel .adp-summary, #schedule .nav-tabs li.active h5, #main h2, .price strong  {color:#'+main_color+'} #schedule .nav-tabs li.active i, #schedule .nav-tabs li a:hover h5, #schedule .nav-tabs li:hover i, .schedule-box li h6 strong {color:#'+main_color+';}    div.section, #home {border-top:5px solid #'+main_color+';  } .styled div {border-color:#'+main_color+';  } #texture {background:url(../img/'+body_texture+') repeat 0 0;} ::selection {background-color:#'+main_color+'; color:#fff;} ::-moz-selection {background-color:#'+main_color+'; color:#fff;} ');
 
-	
+
 // Gallery Captions
 	$(' #eg-thumbs > li ').each( function() { $(this).hoverdir(); } );
-	
+
 // Image Lightbox
 	$("a[rel^='prettyPhoto']").prettyPhoto({overlay_gallery: true});
 	$('.gallery a').append('<span class="link"><i class="fa fa-search-plus"></i></span>');
-	 
+
 // equal heights columns
-	$('.container').each(function(){  
+	$('.container').each(function(){
 	  var highestBox = 0;
 	  $('.column', this).each(function(){
-		  if($(this).height() > highestBox) 
-			 highestBox = $(this).height(); 
-	  });  
+		  if($(this).height() > highestBox)
+			 highestBox = $(this).height();
+	  });
 	  $('.column',this).height(highestBox);
-	});   
-		
+	});
+
 // Top Arrow
 	$(window).scroll(function() {
-	  if ($(window).scrollTop() > 1000) { 
-		  $('a.top').fadeIn('slow'); 
-	  } else { 
+	  if ($(window).scrollTop() > 1000) {
+		  $('a.top').fadeIn('slow');
+	  } else {
 		  $('a.top').fadeOut('slow');
 	  }
-	}); 
-	
-// Register toggle	
+	});
+
+// Register toggle
 	$('#register').hide();
 	$('.register-trigger').click(function(event) {
 			$('#register').slideToggle('fast');
-			event.preventDefault();	
+			event.preventDefault();
 	});
-	  
+
 // Collapse menu for small devices
 	var winWidth = $('body').width();
 	if (winWidth <= 767) {
-		
+
 		// Add attribs to menu
 		$('#Navigation li a').attr('data-toggle', 'collapse');
 		$('#Navigation li a').attr('data-target', '#Navigation');
-		
+
 	} else {
-	} 
-		
+	}
+
 // Tooltip
 	$('a.tips').tooltip();
-	
+
 // responsive Video Target your .container, .wrapper, .post, etc.
     $(".container").fitVids();
-	
+
 // Tabs Active
 	$('#schedule .nav-tabs li').append('<span class="arrow"></span>');
 	$('#schedule .nav-tabs li span.arrow').hide();
-	
+
 // Counter
-	var endDate = "June 7, 2017 15:00:00";
+	var endDate = "September 9, 2015 19:30:00";
         $('.countdown.styled').countdown({
           date: endDate,
           render: function(data) {
@@ -154,7 +154,7 @@ $(document).ready(function() {
 			  }
           }
         });
-	
+
 // Accordion Symbols
 	$('.panel-heading a').click(function() {
 			var thisParent = $(this).parent().next();
@@ -165,25 +165,25 @@ $(document).ready(function() {
 				$(this).parent().addClass('active');
 		}
 	});
-	
+
 //page Scroll
 	$('nav a[href^=#], a.top[href^=#]').click(function(event) {
 	  event.preventDefault();
 	  $('html,body').animate({
 	  scrollTop: $(this.hash).offset().top - 80},
-	  1000);	
+	  1000);
 	});
-	
+
 // Year Update
 	var curYear = new Date().getFullYear();
 	$('.year').html(curYear);
-	
+
 // Subscription Form Validation
 	$("#subscribeForm input").focus(function() {
 		$(this).prev("label").hide();
-		$(this).prev().prev("label").hide();	 		 	
+		$(this).prev().prev("label").hide();
 	});
-	   
+
 	$("#subscribeForm").submit(function() {
 		  // validate and process form here
 		  var emailSubscribe = $("#emailSubscribe").val();
@@ -198,7 +198,7 @@ $(document).ready(function() {
 				$("#emailSubscribe").focus(function() {  $('#emailSubscribe').removeClass('reqfld');  $(this).prev().fadeOut(400);});
 				return false;
 		  }
-		  
+
 		  var dataString = 'emailSubscribe=' + emailSubscribe;
 		  $.ajax({
 			type: "POST",
@@ -210,21 +210,21 @@ $(document).ready(function() {
 			  $('#subscribesuccess').html("<h5 style='color:#"+sub_textColor+";'>"+sub_submitMessage+"</h5>")
 			  .hide().delay(300)
 			  .fadeIn(1500);
-			  
+
 			  $('#subscribeForm').delay(6000).slideUp('fast');
-			  
+
 			}
 		  });
 		  return false;
 	});
-	
+
 // Register Form
 	$('.loader').hide();
 	$("#register input, #register textarea").focus(function() {
 		  $(this).prev("label").hide();
-		  $(this).prev().prev("label").hide();	 		 	
+		  $(this).prev().prev("label").hide();
 	});
-	   
+
 	$("#register").submit(function() {
 		  // validate and process form here
 		  var name = $("#name").val();
@@ -233,8 +233,8 @@ $(document).ready(function() {
 				$('<span class="error" style="display:none; margin-top:0px; color:#cc0000"><i class="fa fa-exclamation-circle"></i></span>').insertBefore('#name').fadeIn(400);
 				$("#name").focus(function() {  $('#name').removeClass('reqfld');  $(this).prev().fadeOut(400);});
 				return false;
-		  } 
-			
+		  }
+
 		  var phone = $("#phone").val();
 				if (phone == "") {
 				$('#phone').addClass('reqfld');
@@ -242,7 +242,7 @@ $(document).ready(function() {
 				$("#phone").focus(function() {  $('#phone').removeClass('reqfld');  $(this).prev().fadeOut(400);});
 				return false;
 		  }
-		  
+
 		  var email = $("#email").val();
 		  if (email == "") {
 				$('#email').addClass('reqfld');
@@ -255,7 +255,7 @@ $(document).ready(function() {
 				$("#email").focus(function() {  $('#email').removeClass('reqfld');  $(this).prev().fadeOut(400);});
 				return false;
 		  }
-		  
+
 		  var comment = $("#comment").val();
 				if (comment == "") {
 				$('#comment').addClass('reqfld');
@@ -263,9 +263,9 @@ $(document).ready(function() {
 				$("#comment").focus(function() {  $('#comment').removeClass('reqfld');  $(this).prev().fadeOut(400);});
 				return false;
 		  }
-		  
+
 		  //$('#register').animate({opacity:'0.3'}, 500);
-		  
+
 		  var dataString = 'name='+ name + '&email=' + email + '&phone=' + phone + '&comment=' + comment;
 		  //alert (dataString);return false;
 		  $.ajax({
@@ -280,14 +280,14 @@ $(document).ready(function() {
 			  $('#success').html("<h5 style='color:#"+textColor+";'>"+submitMessage+"</h5><p style='color:#"+textColor+";'>"+successParagraph+"</p>")
 			  .hide().delay(300)
 			  .fadeIn(1500);
-			  
+
 			  $('#register').delay(6000).slideUp('fast');
-			  
+
 			}
 		  });
 		  return false;
 	  });
-	  
+
 //Speaker OverlayColor
   	var getcolor = $('.speaker i').css("color");
   	var matchColors = /rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)/;

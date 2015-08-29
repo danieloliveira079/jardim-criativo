@@ -8,7 +8,7 @@
 
 /* ==================================  GLOBAL  ==================================== */
 
-			var main_color = "0B3B17"; // Orange: This is global main color for your template.
+			var main_color = "088A4B"; // Orange: This is global main color for your template.
 
 			var page_background_color = "e6e6e6"; // Light Grey: This is the page background color for your template.
 
