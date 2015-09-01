@@ -54,9 +54,9 @@
 			$.backstretch([
 
 			  // you can additional images in here with comma separated values
-			  "../img/slider/slide1.jpg",
-			  "../img/slider/slide2.jpg",
-			  "../img/slider/slide3.jpg"
+			  "../img/slider/slide_03.jpg",
+			  "../img/slider/slide_02.jpg",
+			  "../img/slider/slide_01.jpg"
 
 			  ], {
 				fade: 1000,
