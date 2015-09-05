@@ -465,6 +465,7 @@ h1.logo {
 	margin: 0;
 	border: #e5e5e5 1px solid;
 	border-style: none none none solid;
+	min-height: 100px;
 }
 #schedule .nav-tabs li:first-child, #schedule .nav-tabs li.active a {
 	border: none;
@@ -534,6 +535,7 @@ h1.logo {
 	padding: 0;
 }
 .schedule-box ul.activities li {
+	min-height: 150px;
 	display: block;
 	border-top: #e5e5e5 1px solid;
 	padding: 2em 1.5em;
