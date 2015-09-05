@@ -197,7 +197,7 @@ color: rgba(255,255,255,0.7)!important
 h1.logo {
 	background: none;
 	border: none;
-	margin: 0.8em 0;
+	margin: 0.2em 0;
 }
 #top .container {
 	position: relative;
@@ -208,7 +208,8 @@ h1.logo {
 	z-index: 999;
 	top: 0;
 	left: 0;
-	background: rgba(255,255,255,0.9);
+	background-color: white;
+	/* background: rgba(255,255,255,0.9); */
 	-webkit-box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
 	box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
 }
