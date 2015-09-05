@@ -1,7 +1,7 @@
 var directionDisplay;
 var directionsService = new google.maps.DirectionsService();
 function initialize() {
-  var latlng = new google.maps.LatLng(37.791649,-122.394395);
+  var latlng = new google.maps.LatLng(-27.4355603,-48.4095087);
   // set direction render options
   var rendererOptions = { draggable: true };
   directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
@@ -18,17 +18,17 @@ function initialize() {
   directionsDisplay.setPanel(document.getElementById("directionsPanel"));
   // Add a marker to the map for the end-point of the directions.
   var marker = new google.maps.Marker({
-    position: latlng, 
-    map: map, 
+    position: latlng,
+    map: map,
     title:"Rodderhof, Oss"
-  }); 
+  });
 }
 function calcRoute() {
-  // get the travelmode, startpoint and via point from the form   
+  // get the travelmode, startpoint and via point from the form
   var travelMode = $('input[name="travelMode"]:checked').val();
   var start = $("#routeStart").val();
   var via = $("#routeVia").val();
-  
+
   if (travelMode == 'TRANSIT') {
     via = ''; // if the travel mode is transit, don't use the via waypoint because that will not work
   }
@@ -65,7 +65,7 @@ function calcRoute() {
       } else if (status == 'NOT_FOUND') {
         alert('At least one of the origin, destination, or waypoints could not be geocoded.');
       } else if (status == 'INVALID_REQUEST') {
-        alert('The DirectionsRequest provided was invalid.');         
+        alert('The DirectionsRequest provided was invalid.');
       } else {
         alert("There was an unknown error in your request. Requeststatus: nn"+status);
       }
