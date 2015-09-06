@@ -1,1 +1,0 @@
-daniel.oliveira@gmail.com

@@ -13,6 +13,16 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/subscriptions', function (req, res) {
+  fs.readdir(__dirname + "/subscriptions/", function(err, files){
+    if (err) {
+      return console.log(err);
+    }
+
+    res.send(files);
+  });
+});
+
 app.post('/subscribe', function (req, res) {
   var email = req.body.emailSubscribe;
   console.log(email);
