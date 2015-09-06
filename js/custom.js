@@ -23,9 +23,9 @@
 
 	/* SET REGISTER FORM SUCCESS MESSAGE */
 
-			var submitMessage = "Your form has been submitted successfully.";
+			var submitMessage = "Seus dados foram enviados com sucesso.";
 
-			var successParagraph = "We'll respond to your message within 24 hours. <br> Please call <b>123.456.789</b> for any urgent queries. Thank You!";
+			var successParagraph = "Entraremos em contato em breve!";
 
 			var successBoxColor = "f9ffef"; // Background color for the success box
 
@@ -39,7 +39,7 @@
 
 	/* SET SUBSCRIBE FORM SUCCESS MESSAGE */
 
-			var sub_submitMessage = "You have subscribed successfully.";
+			var sub_submitMessage = "Sua inscrição foi aceita com sucesso.";
 
 			var sub_successBoxColor = "f9ffef"; // Background color for the success box
 
