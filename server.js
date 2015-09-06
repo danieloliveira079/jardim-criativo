@@ -1,4 +1,6 @@
 var express = require('express');
+var fs = require('fs');
+
 var app = express();
 
 var bodyParser = require('body-parser');
@@ -14,6 +16,16 @@ app.get('/', function (req, res) {
 app.post('/subscribe', function (req, res) {
   var email = req.body.emailSubscribe;
   console.log(email);
+
+  fs.writeFile(__dirname + "/subscriptions/" + email , email, function(err) {
+      if(err) {
+          return console.log(err);
+      }
+
+      console.log("The file was saved!");
+  });
+
+  res.send("Subscription Accepted");
 });
 
 var port = process.env.PORT || 8082;
