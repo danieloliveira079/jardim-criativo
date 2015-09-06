@@ -202,7 +202,7 @@ $(document).ready(function() {
 		  var dataString = 'emailSubscribe=' + emailSubscribe;
 		  $.ajax({
 			type: "POST",
-			url: "form/subscribe.php",
+			url: "/subscribe",
 			data: dataString,
 			success: function() {
 			  $("#subscribeForm").hide();
