@@ -669,6 +669,7 @@ ul.li-blocks li strong {
 	background: #fff;
 }
 .speaker-grid .section figcaption {
+	width: 100%;
 	display: block;
 	bottom: 0;
 	height: 100%;
