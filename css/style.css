@@ -74,6 +74,11 @@ input[type=text], input[type=email], input[type=tel], textarea, input[type=numbe
 	margin-bottom: 1.5em;
 }
 /* ============ GENERAL ============ */
+.logo-txt{
+	  margin-top:0.5em;
+		padding-left: 0;
+		font-size: x-large;
+}
 
 section.page-block {
 	padidng: 3em;
