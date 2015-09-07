@@ -14,20 +14,21 @@ app.get('/', function (req, res) {
 });
 
 app.get('/subscriptions', function (req, res) {
-  fs.readdir(__dirname + "/subscriptions/", function(err, files){
+  /*fs.readdir(__dirname + "/subscriptions/", function(err, files){
     if (err) {
       return console.log(err);
     }
 
     res.send(files);
-  });
+  });*/
+    res.sendFile(__dirname + '/subscriptions/subscribers.txt');
 });
 
 app.post('/subscribe', function (req, res) {
   var email = req.body.emailSubscribe;
   console.log(email);
 
-  fs.writeFile(__dirname + "/subscriptions/" + email , email, function(err) {
+  fs.appendFile(__dirname + "/subscriptions/subscribers.txt", "\n" + email, function(err) {
       if(err) {
           return console.log(err);
       }
