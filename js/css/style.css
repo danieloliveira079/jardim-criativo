@@ -510,6 +510,14 @@ h1.logo {
 #schedule .tab-pane {
 	padding: 3em 2em 2em 2em;
 }
+
+#schedule .done {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	font-size: x-small !important;
+}
+
+
 .tab-pane h3 i {
 	display: none;
 }
@@ -550,6 +558,7 @@ h1.logo {
 .schedule-box ul.activities li h6 {
 	margin-bottom: 1em;
 }
+
 ul.li-blocks {
 	margin: 0 0 2em 0;
 	padding: 0;
