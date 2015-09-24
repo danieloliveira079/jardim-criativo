@@ -484,6 +484,12 @@ h1.logo {
 	margin: 0;
 	clear: both;
 }
+
+#schedule .done {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
 .nav-tabs>li>a {
 	border: none;
 }
