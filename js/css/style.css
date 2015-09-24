@@ -481,7 +481,7 @@ h1.logo {
 	border: none;
 }
 #schedule .nav-tabs li a:hover, #schedule .nav-tabs li.active a {
-	background: #fbfbfb;
+	background: #black;
 }
 #schedule .nav-tabs li.active span.arrow {
 	display: block!important;
@@ -514,7 +514,6 @@ h1.logo {
 #schedule .done {
 	opacity: 0.4;
 	filter: alpha(opacity=40);
-	font-size: x-small !important;
 }
 
 
