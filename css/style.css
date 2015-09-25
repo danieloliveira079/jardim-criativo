@@ -490,6 +490,13 @@ h1.logo {
 	filter: alpha(opacity=40);
 }
 
+#schedule .achieved{
+	background-image: url('../img/achieved.png') !important;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .nav-tabs>li>a {
 	border: none;
 }
