@@ -91,7 +91,7 @@ $(document).ready(function() {
 	$(' #eg-thumbs > li ').each( function() { $(this).hoverdir(); } );
 
 // Image Lightbox
-	$("a[rel^='prettyPhoto']").prettyPhoto({overlay_gallery: true});
+	$("a[rel^='prettyPhoto']").prettyPhoto({social_tools: false, overlay_gallery: true});
 	$('.gallery a').append('<span class="link"><i class="fa fa-search-plus"></i></span>');
 
 // equal heights columns
