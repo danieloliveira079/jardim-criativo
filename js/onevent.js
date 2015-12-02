@@ -142,7 +142,7 @@ $(document).ready(function() {
 	$('#schedule .nav-tabs li span.arrow').hide();
 
 // Counter
-	var endDate = "November 18, 2015 19:30:00";
+	var endDate = "December 02, 2015 19:30:00";
         $('.countdown.styled').countdown({
           date: endDate,
           render: function(data) {
